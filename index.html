@@ -8,21 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Lato:400,700&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" /> -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="./assets/js/popper.min.js"></script>
     <script defer src="./assets/js/bootstrap.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous"></script> -->
 
     <script> document.addEventListener("DOMContentLoaded", () => { document.querySelectorAll("img[src]").forEach(image => { const altText = generateAltText(image.getAttribute("src")); image.alt = altText; }); }); function generateAltText(src) { return src.split('/').pop().split('.')[0].replace(/[-\/_*]/g, ' '); } </script>
 
@@ -48,10 +38,10 @@
 </head>
   <body>
     <div class="topbar">
-    <div class="container">
+    <div class="container-fluid">
         <div class="topbar_content">
             <div>
-                <p class="topbar_content-p"></p>Aider les familles et leurs proches à honorer ceux qui leur sont chers
+                <p class="topbar_content-p">Urgence décès 24h/24 - 7j/7</p>
             </div>
             <div>
                 <p class="topbar_content-p"><i class="fas fa-map-marker"></i> &nbsp;41 place Maurice-Charretier, Champigny-sur-marne - 94500</p>
@@ -62,9 +52,8 @@
                 <a href="./index.html" class="link">
                     <div class="d-flex align-items-center">
                         <img src="./assets/img/logo.webp" alt="" class="topbar_bottom-logo--img">
-                        <p class="topbar_bottom-logo--title">BLESSING</p>
+                        <p class="topbar_bottom-logo--title">POMPES FUNÈBRES MUSULMANES 94</p>
                     </div>
-                    <p class="topbar_bottom-logo--p">Funeral Home and Cemetry</p>
                 </a>
             </div>
             <div class="topbar_bottom-details">
@@ -75,17 +64,6 @@
                     <div class="d-flex flex-column">
                         <a href="tel:0197335652"
                             class="topbar_bottom-link">01 97 33 56 52</a>
-                        <p class="topbar_content-p">Restons en contact</p>
-                    </div>
-                </div>
-                <div class="d-flex align-items-center">
-                    <div class="topbar_bottom-icon">
-                        <img src="./assets/img/flower-icon.jpg" alt="" class="topbar_bottom-icon--img">
-                    </div>
-                    <div class="d-flex flex-column">
-                        <a href="tel:0197335652" class="topbar_bottom-link">
-                            En savoir plus</a>
-                        <p class="topbar_content-p">Chérissez vos êtres cher</p>
                     </div>
                 </div>
             </div>
@@ -97,7 +75,10 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="footer_logo to-be-shown-990">
                 <a href="./index.html" class="link">
-                    <img src="./assets/img/footer-logo.webp" alt="" class="footer_logo-img to-be-small">
+                    <div class="footer_logo2">
+                        <img src="./assets/img/logo.webp" alt="" class="footer_logo-img">
+                        <p class="footer_logo-title2">Pompes Funèbres Musulmanes 94</p>
+                    </div>
                 </a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -132,7 +113,7 @@
                             <a class="nav-link navbar_content-link" href="./les-produits.html">Les produits</a>
                         </li>
                         <li class="nav-item navbar_content-list">
-                            <a class="nav-link navbar_content-link" href="./nos-engagements.html">Engagements</a>
+                            <a class="nav-link navbar_content-link" href="./engagements.html">Engagements</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link navbar_content-link" href="./contact.html">Nous contacter
@@ -156,7 +137,7 @@
                         services funéraires musulmans sont conçus pour honorer vos traditions.
                     </p>
                     <div class="d-flex justify-content-start">
-                        <a href="./nos-engagements.html" title="more" class="slider_content-link">En savoir plus</a>
+                        <a href="./engagements.html" class="slider_content-link">En savoir plus</a>
                     </div>
                 </div>
             </div>
@@ -231,7 +212,7 @@
 </div>
 <section class="services_boxes">
     <div class="services_boxes-border">
-        <div class="row">
+        <div class="row bg-white">
             <div class="col-md-4 col-sm-6 m-0 p-0">
                 <div class="services_box">
                     <div class="services_box-image">
@@ -259,8 +240,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row bg-white">
             <div class="col-md-4 col-sm-6 m-0 p-0">
                 <div class="services_box">
                     <div class="services_box-content">
@@ -301,38 +280,31 @@
 <div class="stripe">
     <div class="container">
         <div class="stripe_content">
-            <h2 class="stripe_content-title">Notre engagement</h2>
-            <p class="stripe_content-p">Chez Pompes Funèbres Musulmanes 94, notre priorité est de vous fournir un
-                soutien chaleureux et professionnel pendant cette période de deuil. Notre équipe dévouée comprend
-                l'importance de respecter les rituels et les croyances musulmanes lors de la préparation des
-                funérailles. Nous nous engageons à offrir des services conformes à la tradition islamique, tout en
-                tenant compte de vos besoins individuels et de vos souhaits.</p>
+                <h2 class="stripe_content-title">Notre engagement</h2>
+                <p class="stripe_content-p">Chez Pompes Funèbres Musulmanes 94, notre priorité est de vous fournir un
+                    soutien chaleureux et professionnel pendant cette période de deuil. Notre équipe dévouée comprend
+                    l'importance de respecter les rituels et les croyances musulmanes lors de la préparation des
+                    funérailles. Nous nous engageons à offrir des services conformes à la tradition islamique, tout en
+                    tenant compte de vos besoins individuels et de vos souhaits.</p>
         </div>
     </div>
 </div>
-<section class="menu bg-white">
-    <div class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <div class="menu_image menu_image-2">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="menu_content">
-                    <h3 class="menu_content-title">Votre Partenaire en Compassion</h3>
-                    <p class="menu_content-p">Pompes Funèbres Musulmanes 94 est plus qu'une agence de services
-                        funéraires ; nous sommes votre soutien, votre guide et votre allié pendant ces moments
-                        difficiles. Nous comprenons l'importance de préserver les traditions et les croyances dans le
-                        processus de deuil, et c'est avec respect et honneur que nous vous accompagnons dans ce chapitre
-                        de la vie.</p>
-                    <div class="mt-5">
-                        <a href="./nos-engagements.html" class="menu_content-link">En savoir plus</a>
+
+<div class="stripe-2">
+    <div class="container">
+        <div class="stripe_content">
+                <h2 class="stripe_content-title">Votre Partenaire en Compassion</h2>
+                <p class="stripe_content-p">Pompes Funèbres Musulmanes 94 est plus qu'une agence de services
+                    funéraires ; nous sommes votre soutien, votre guide et votre allié pendant ces moments
+                    difficiles. Nous comprenons l'importance de préserver les traditions et les croyances dans le
+                    processus de deuil, et c'est avec respect et honneur que nous vous accompagnons dans ce chapitre
+                    de la vie.</p>
+                    <div class="mt-5 d-flex justify-content-center">
+                        <a href="./engagements.html" class="menu_content-link">En savoir plus</a>
                     </div>
-                </div>
-            </div>
         </div>
     </div>
-</section>
+</div>
 <section class="services bg-prime pb-0">
     <div class="container-fluid">
         <div class="services_header mt-5">
@@ -344,11 +316,8 @@
 <section class="menu_boxes">
     <div class="menu_boxes-border">
         <div class="row">
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-4 col-sm-6">
                 <div class="menu_box">
-                    <div class="menu_box-image">
-                        <img src="./assets/img/mb1.jpg" alt="" class="menu_box-image--img">
-                    </div>
                     <div class="menu_box-content">
                         <h3 class="menu_box-content--title">Respect et tradition chez Pompes Funèbres Musulmanes 94</h3>
                         <p class="menu_content-p">Chez Pompes Funèbres Musulmanes 94, nous comprenons l'importance de
@@ -357,13 +326,13 @@
                             enseignements religieux, permettant ainsi de rendre hommage à vos êtres chers de manière
                             authentique et significative.</p>
                     </div>
+                    <div class="menu_box-image">
+                        <img src="./assets/img/mb1.jpg" alt="" class="menu_box-image--img">
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-4 col-sm-6">
                 <div class="menu_box">
-                    <div class="menu_box-image">
-                        <img src="./assets/img/mb2.jpg" alt="" class="menu_box-image--img">
-                    </div>
                     <div class="menu_box-content">
                         <h3 class="menu_box-content--title mb-5 pb-5">Monuments funéraires et marbrerie</h3>
                         <p class="menu_content-p">La mémoire de votre être cher mérite d'être préservée de manière
@@ -372,13 +341,13 @@
                             Chaque monument est une œuvre d'art personnalisée, conçue avec des matériaux de qualité et
                             un savoir-faire exceptionnel.</p>
                     </div>
+                    <div class="menu_box-image">
+                        <img src="./assets/img/mb2.jpg" alt="" class="menu_box-image--img">
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-4 col-sm-12">
                 <div class="menu_box">
-                    <div class="menu_box-image">
-                        <img src="./assets/img/mb3.jpg" alt="" class="menu_box-image--img">
-                    </div>
                     <div class="menu_box-content">
                         <h3 class="menu_box-content--title  mb-5 pb-5">Linceuls et cercueils musulmans</h3>
                         <p class="menu_content-p">Nos linceuls et cercueils sont conçus dans le respect des préceptes
@@ -387,20 +356,8 @@
                             accord avec les enseignements musulmans en matière de décence et de simplicité.
                         </p>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="menu_box">
-                    <div class="menu_box-image">
-                        <img src="./assets/img/mb4.jpg" alt="" class="menu_box-image--img">
-                    </div>
-                    <div class="menu_box-content">
-                        <h3 class="menu_box-content--title  m-b-5 pb-5">Urnes Musulmanes</h3>
-                        <p class="menu_content-p">Si la crémation est choisie, nos urnes musulmanes sont conçues en
-                            accord avec les enseignements religieux. Elles sont fabriquées à partir de matériaux
-                            naturels tels que le bois ou la céramique, et respectent les exigences de décence et de
-                            respect pour les cendres du défunt.
-                        </p>
+                    <div class="menu_box-image m-t-5">
+                        <img src="./assets/img/mb3.jpg" alt="" class="menu_box-image--img">
                     </div>
                 </div>
             </div>
@@ -416,9 +373,10 @@
     <div class="footer-info">
         <div class="container">
             <div class="row footer-info-row">
-                <div class="col-md-3 col-sm-6 footer-info-block">
+                <div class="col-lg-3 col-md-12 footer-info-block">
                     <div class="footer_logo">
-                        <img src="./assets/img/footer-logo.webp" alt="" class="footer_logo-img">
+                        <img src="./assets/img/logo.webp" alt="" class="footer_logo-img">
+                        <p class="footer_logo-title">POMPES FUNÈBRES MUSULMANES 94</p>
                     </div>
                     <ul class="footer_links">
                         <li class="footer_links-ul">
@@ -449,19 +407,9 @@
                                 class="fab fa-instagram footer-info-social-links-link"></a></li>
                     </ul>
                 </div>
-                <!-- <div class="col-md-4 col-sm-6 footer-info-block">
-                    <h4 class="footer-info-head">Testimonals</h4>
-                    <p class="footer-info-p">I wanted to take a moment and thank you again for the very nice service you
-                        performed for Iran's memorial. I had several people come up to me to say "what a wonderful
-                        funeral". It was a nice tribute to him."</p>
-                    <p class="footer-info-p mt-4">
-                        <i>- Alexander Davis
-                        </i>
-                    </p>
-                </div> -->
                 <div class="col-lg-1"></div>
                 <div class="col-md-4 col-sm-6 footer-info-block">
-                    <h4 class="footer-info-head">Les services et produits</h4>
+                    <p class="footer-info-head">Les services et produits</p>
                     <ul class="footer_links">
                         <li class="footer_links-ul">
                             <a href="./rapatriement.html" class="footer_links-ul--link">
@@ -487,10 +435,10 @@
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-3 col-sm-6 footer-info-block">
-                    <h4 class="footer-info-head">Autres liens</h4>
+                    <p class="footer-info-head">Autres liens</p>
                     <ul class="footer_links">
                         <li class="footer_links-ul">
-                            <a href="./nos-engagements.html" class="footer_links-ul--link">
+                            <a href="./engagements.html" class="footer_links-ul--link">
                                 Engagements
                             </a>
                         </li>
@@ -506,62 +454,15 @@
                         </li>
                     </ul>
                 </div>
-
-                <!-- <div class="col-md-3 col-sm-6 footer-info-block">
-                    <h6 class="footer-info-head">Instagram</h6>
-                    <div class="row footer-info-photos">
-                        <div class="col-4 footer-info-photos-col">
-                            <a href="#" class="footer-info-photos-image">
-                                <img src="/assets/img/i1.jpg" alt="Instagram"
-                                    class="footer-info-photos-image-img">
-                                <span class="footer-info-photos-hover"></span>
-                            </a>
-                        </div>
-                        <div class="col-4 footer-info-photos-col">
-                            <a href="#" class="footer-info-photos-image">
-                                <img src="/assets/img/i2.jpg" alt="Instagram"
-                                    class="footer-info-photos-image-img">
-                                <span class="footer-info-photos-hover"></span>
-                            </a>
-                        </div>
-                        <div class="col-4 footer-info-photos-col">
-                            <a href="#" class="footer-info-photos-image">
-                                <img src="/assets/img/i3.jpg" alt="Instagram"
-                                    class="footer-info-photos-image-img">
-                                <span class="footer-info-photos-hover"></span>
-                            </a>
-                        </div>
-                        <div class="col-4 footer-info-photos-col">
-                            <a href="#" class="footer-info-photos-image">
-                                <img src="/assets/img/i4.jpg" alt="Instagram"
-                                    class="footer-info-photos-image-img">
-                                <span class="footer-info-photos-hover"></span>
-                            </a>
-                        </div>
-                        <div class="col-4 footer-info-photos-col">
-                            <a href="#" class="footer-info-photos-image">
-                                <img src="/assets/img/i3.jpg" alt="Instagram"
-                                    class="footer-info-photos-image-img">
-                                <span class="footer-info-photos-hover"></span>
-                            </a>
-                        </div>
-                        <div class="col-4 footer-info-photos-col">
-                            <a href="#" class="footer-info-photos-image">
-                                <img src="/assets/img/i5.jpg" alt="Instagram"
-                                    class="footer-info-photos-image-img">
-                                <span class="footer-info-photos-hover"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
     <div class="footer_bottom">
         <center>
             <a href="https://www.bhinternet.fr/" target="_blank"
-                class="footer_links-ul--link text-white hover text-center w-100" href="https://www.bhinternet.fr/"> BHInternet
-                - Création site internet | 2023 </a>
+                class="footer_links-ul--link text-white hover text-center w-100 d-inline" href="https://www.bhinternet.fr/"> BHInternet
+                - Création site internet | 2023 |</a> <a
+                href="./mentions-legales.html" class="footer_links-ul--link text-white hover text-center w-100 d-inline">Mentions légales</a>
         </center>
     </div>
 </footer>
@@ -570,5 +471,6 @@
 <script src="./assets/js/index.js"></script>
 <script src="./assets/js/formSubmit.js"></script>   
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <a title="up" href="#" id="fixphone" title="Up"><i class="fa fa-chevron-up"></i></a>
   </body>
 </html>

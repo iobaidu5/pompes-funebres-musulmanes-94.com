@@ -19,66 +19,17 @@ $(document).ready(function () {
     }
   }
 
-  
-  var owl = $("#owl");
-  owl.owlCarousel({
-    items: 1,
-    navigation: false,
-    loop: true,
-    autoplay: true,
-    margin: 20,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: false,
-    dots: true,
-    animateIn: "fadeIn",
-    animateOut: "fadeOut",
-    navText: [
-      "<i class='fal fa-caret-left owlNav'></i>",
-      "<i class='fal fa-caret-right owlNav'></i>",
-    ],
-    responsiveClass: true,
-    responsive: {
-      400: {
-        items: 1,
-        nav: true,
-      },
-      768: {
-        items: 1,
-        nav: true,
-      },
-      1200: {
-        items: 1,
-        nav: false,
-      },
-      1600: {
-        items: 1,
-        nav: true,
-        loop: false,
-      },
-    },
-  });
-  $(".play").on("click", function () {
-    owl.trigger("play.owl.autoplay", [5000]);
-  });
-  $(".stop").on("click", function () {
-    owl.trigger("stop.owl.autoplay");
-  });
 
-
-  $(document).ready(function() {
-    // Select all anchor elements
-    $("a").each(function() {
-      // Extract the href attribute value and remove any leading/trailing spaces
-      var href = $(this).attr("href").trim();
-
-      // Remove the '{%', '%}' and spaces from the href value to get the title
-      var title = href.replace(/\{%\s*|\s*%\}/g, '').trim();
-
-      // Set the title attribute of the anchor element
-      $(this).attr("title", title);
+  $(document).ready(function () {
+    // Select all <a> elements
+    $("a").each(function () {
+      // Get the content of the <a> element
+      var content = $(this).text();
+      // Add the 'title' attribute with the same content
+      $(this).attr("title", content);
+      console.log("title  ", content)
     });
-  });
-
+  })
 
   $(document).ready(function() {
     // Get the current page's URL
